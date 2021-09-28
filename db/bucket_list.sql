@@ -11,7 +11,7 @@ CREATE TABLE cities (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255),
   sight VARCHAR(255),
-  country_id INT REFERENCES countries(id),
+  country_id INT REFERENCES countries(id) ON DELETE CASCADE,
   visited BOOLEAN DEFAULT FALSE
   );
 
