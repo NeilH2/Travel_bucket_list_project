@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-<form action="/cities/{{city.id}}" method="post">
+<form class="edit_city" action="/cities/{{city.id}}" method="post">
   <div>
     <label for="name">Name:</label>
     <input type="text" id="name" name="name" value="{{ city.name }}" required autofocus>
@@ -41,7 +41,7 @@
     </select>
   </div>
 
-  <button type="submit">Update City</button>
+  <button class="button" type="submit">Update City</button>
 
 </form>
 

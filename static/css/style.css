@@ -2,20 +2,29 @@ body {
     background: url('/static/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color:rgb(255, 115, 0);
+    color: chartreuse;
     font-family: "Monaco", "Lucida Grande", sans-serif;
     padding: 0px;
     margin: 0px;
+    min-height: 100%;
   }
+    
+
+
+  
 
 .menu{
 
   display: grid;
-  gap: 10px;
+  gap: 20px;
   grid-template-columns: 100px 200px;
-  justify-content: center;
+  justify-content: space-around;
   color: aqua;
   border-color: chartreuse;
+  font-size: 30px;
+  font-style: italic;
+
+  
   
 }
 
@@ -37,7 +46,9 @@ h1 {
 .show_cities{
   display: grid;
   justify-content: center;
-  font-size: 30px
+  font-size: 30px;
+  background-color: white; 
+  opacity: 0.8;
 }
 
 .city_links{
@@ -79,6 +90,38 @@ h1 {
   font-size: 30px;
 
 }
+
+.edit_city{
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+
+}
+
+.edit_country{
+  display: grid;
+  justify-content: center;
+  font-size: 30px;
+
+}
+
+.button {
+  opacity: 0.8;
+  border: 0;
+  color: #d60787;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 1.5rem;
+  width: 100%;
+  size: 20px;
+  font-size: 20px;
+  
+
+}
+
+
+
 
 
 

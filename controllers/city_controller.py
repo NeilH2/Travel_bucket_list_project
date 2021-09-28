@@ -57,5 +57,9 @@ def update_city(id):
     country = country_repository.select(country_id)
     city = City(name, sight, country, visited, id)
     city_repository.update(city)
-    return redirect('/cities')        
-   
+    return redirect('/cities') 
+
+@destinations_cities_blueprint.route("/places_ive_been/<id>", methods=['GET']) 
+def show_cities_visited(id):
+    city = city_repository.select(id)
+    return render_template('places_ive_been/show.html', city = city)
