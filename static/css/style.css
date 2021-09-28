@@ -1,0 +1,20 @@
+body {
+    background: url('/static/images/background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:rgb(255, 115, 0);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+    color: #f04a09;
+    margin-bottom: 20px;
+  }
+
+body > main > nav{
+  flex-direction: flex flex row;
+
+}

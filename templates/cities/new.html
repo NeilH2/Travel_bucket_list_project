@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content  %}
+
+<form action="/cities" method="POST">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name" required>
+    </div>
+
+    <div>
+        <label for="sight">Sight</label>
+        <input type="text" name="sight" id="sight" placeholder="Sight" required>
+    </div>
+
+    <div> 
+        <label for="visited">Visited:</label>
+        <select id="visited" name="visited">
+            <option value="true">I have already visited</option>
+            <option value="false">Haven't visited yet</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="country">Country:</label>
+        <select id="country" name="country_id">
+            {% for country in all_countries %} 
+      <option value="{{ country.id }}">{{ country.name }}</option> 
+    {% endfor %}
+
+       
+        </select>
+      </div>
+
+    <button type="submit">Add City</button>
+
+   
+
+</form>
+{% endblock %}
