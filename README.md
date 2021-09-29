@@ -1,9 +1,9 @@
-###Running instructions: 
+Running instructions: 
 create database - psql -d bucket_list -f db/bucket_list.sql
 type flask run into terminal 
 visit localhost:5000/home in your web browser
 
-###Brief
+Brief
 Build an app to track someone's travel adventures.
 
 ### MVP:
@@ -20,7 +20,7 @@ Build an app to track someone's travel adventures.
  * Search for destination by continent, city or country
  * Any other ideas you might come up with
 
-###Technology used
+Technology used
 
 This project was built using only:
 
