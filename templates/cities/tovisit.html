@@ -2,17 +2,20 @@
 {% block content %}
 
 
+
+
+
 <h1>Still to Visit</h1>
 
-
-
+<table>
+ 
 
   {% for city in cities %}
-  
+  <tr>
     {% if city.visited == False %}
-    <a class="city_links" href="/cities/{{city.id}}">{{city.name}} </a>
-  
+    <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
+  </tr>
   {% endif %}
   {% endfor %}
-
+</table>
 {% endblock %}
