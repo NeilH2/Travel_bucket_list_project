@@ -120,6 +120,41 @@ h1 {
 
 }
 
+input[type=text] {
+  padding: 0;
+  height: 40px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(0, 0, 0, .15);
+  background-color: white;
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+select{
+  padding: 0;
+  height: 40px;
+  position: relative;
+  left: 0;
+  outline: none;
+  border: 1px solid #cdcdcd;
+  border-color: rgba(241, 241, 241, 0.15);
+  background-color: none;
+  font-size: 16px;
+  opacity: 0.6;
+
+}
+
+header{
+  display: grid;
+  justify-content: center;
+  font-size: 75px;
+  list-style: none;
+  text-shadow: black 4px 4px 1px;
+}
+
 
 
 

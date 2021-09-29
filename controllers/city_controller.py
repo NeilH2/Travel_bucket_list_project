@@ -59,7 +59,14 @@ def update_city(id):
     city_repository.update(city)
     return redirect('/cities') 
 
-@destinations_cities_blueprint.route("/places_ive_been/<id>", methods=['GET']) 
-def show_cities_visited(id):
-    city = city_repository.select(id)
-    return render_template('places_ive_been/show.html', city = city)
+@destinations_cities_blueprint.route("/cities/visited")
+def cities_visited():
+    cities = city_repository.select_all()
+    return render_template("cities/visited.html", cities = cities)
+
+@destinations_cities_blueprint.route("/cities/tovisit")
+def cities_to_visit():
+    cities = city_repository.select_all()
+    return render_template("cities/tovisit.html", cities = cities)
+
+

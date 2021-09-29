@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<h1>Still to Visit</h1>
+
+
+
+
+  {% for city in cities %}
+  
+    {% if city.visited == False %}
+    <a class="city_links" href="/cities/{{city.id}}">{{city.name}} </a>
+  
+  {% endif %}
+  {% endfor %}
+
+{% endblock %}
