@@ -1,21 +1,21 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
+<hr>
 
 
 
 <h1>Still to Visit</h1>
 
-<table>
+
  
 
   {% for city in cities %}
   <tr>
     {% if city.visited == False %}
-    <td><a href="/cities/{{ city.id }}"> {{city.name}} </a></td>
+    <td><a class="city_links" href="/cities/{{ city.id }}"> {{city.name}} </a></td>
   </tr>
   {% endif %}
   {% endfor %}
-</table>
+
 {% endblock %}

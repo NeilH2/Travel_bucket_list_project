@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<hr>
 <h1>Countries</h1>
 
 {% for country in all_countries %}
    
-   <a class="country_links" href="/countries/{{country.id}}">{{country.name}}</a>
+   <a class="city_links" href="/countries/{{country.id}}">{{country.name}}</a>
    
 
    <form class="delete-form" action="/countries/{{country.id}}/delete" method="POST">

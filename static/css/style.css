@@ -1,8 +1,8 @@
 body {
-    background: url('/static/images/background.jpg') no-repeat center center fixed;
+    background: url('/static/images/background12.jpg') no-repeat center center fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color: chartreuse;
+    color: rgb(239, 243, 11);
     font-family: "Monaco", "Lucida Grande", sans-serif;
     padding: 0px;
     margin: 0px;
@@ -16,30 +16,31 @@ body {
 .menu{
 
   display: grid;
+  list-style: none;
   gap: 20px;
   grid-template-columns: 100px 200px;
   justify-content: space-around;
-  color: aqua;
-  border-color: chartreuse;
-  font-size: 30px;
+  font-size: 20px;
   font-style: italic;
-
-  
-  
+  text-shadow: black 1px 1px 1px;
 }
+
+
 
 h1 {
 
   display: grid;
   justify-content: center;
-  font-size: 70px;
-  margin-top: 20px;
+  font-size: 40px;
+  margin-top: 36px;
+  text-shadow: black 4px 4px 1px;
+  color:hotpink
 }
 
 .menu a{
 
-  color: greenyellow ;
-  opacity: 0.8;
+  color: hotpink ;
+  opacity: 1;
  
 }
 
@@ -47,15 +48,19 @@ h1 {
   display: grid;
   justify-content: center;
   font-size: 30px;
-  background-color: white; 
-  opacity: 0.8;
+  text-shadow: black 1px 1px 1px;
+   
+  
 }
 
 .city_links{
   display: grid;
   justify-content: center;
   font-size: 30px ;
-  color: deeppink;
+  color: rgb(239, 243, 11);
+  text-shadow: black 1px 1px 1px;
+  text-decoration: none;
+  
 }
 
 .delete-form{
@@ -67,15 +72,11 @@ h1 {
 .show_countries{
   display: grid;
   justify-content: center;
-  font-size: 30px
+  font-size: 30px;
+  text-shadow: black 4px 4px 1px;
 }
 
-.country_links{
-  display: grid;
-  justify-content: center;
-  font-size: 30px ;
-  color: deeppink;
-}
+
 
 .add_cities{
   display: grid;
@@ -106,18 +107,23 @@ h1 {
 }
 
 .button {
-  opacity: 0.8;
+  opacity: 0.2;
   border: 0;
-  color: #d60787;
+  color: hotpink;
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   line-height: 1;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   width: 100%;
   size: 20px;
   font-size: 20px;
   
+}
 
+.button:hover {
+  background-color: hotpink ;
+  color: white;
+  opacity:0.9
 }
 
 input[type=text] {
@@ -130,7 +136,14 @@ input[type=text] {
   border-color: rgba(0, 0, 0, .15);
   background-color: white;
   font-size: 16px;
-  opacity: 0.6;
+  opacity: 0.2;
+}
+
+input:hover{
+  background-color: white;
+  color: white;
+  opacity:0.4
+  
 }
 
 select{
@@ -150,11 +163,10 @@ select{
 header{
   display: grid;
   justify-content: center;
-  font-size: 75px;
+  font-size: 65px;
   list-style: none;
   text-shadow: black 4px 4px 1px;
 }
-
 
 
 
