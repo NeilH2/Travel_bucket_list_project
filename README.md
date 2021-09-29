@@ -1,6 +1,8 @@
 Running instructions: 
 create database - psql -d bucket_list -f db/bucket_list.sql
+
 type flask run into terminal 
+
 visit localhost:5000/home in your web browser
 
 Brief
