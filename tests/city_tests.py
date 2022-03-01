@@ -5,7 +5,7 @@ from models.country import Country
 class TestCity(unittest.TestCase):
     
     def setUp(self):
-        self.city = City("Beijing", "China", "Tiananmen Square")
+        self.city = City("Beijing", "Tiananmen Square", "China")
     
     
     def test_city_has_name(self):
@@ -22,7 +22,7 @@ class TestCity(unittest.TestCase):
     def test_visited_starts_false(self):
         self.assertEqual(False, self.city.visited)
         
-    
+
     def test_can_set_as_visited(self):
         self.city.set_as_visited()
         self.assertEqual(True, self.city.visited)

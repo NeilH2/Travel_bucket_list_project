@@ -9,3 +9,5 @@ class City:
         
     def set_as_visited(self):
         self.visited = True
+
+    
